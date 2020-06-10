@@ -2,7 +2,7 @@
 
 namespace DAL.Entities
 {
-    public class StageType
+    public class StageType : IWithId<int>
     {
         [Key, Required]
         public int Id { get; set; }

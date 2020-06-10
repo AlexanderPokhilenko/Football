@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DAL.Entities
 {
-    public class Stage
+    public class Stage : IWithId<int>
     {
         [Key, Required]
         public int Id { get; set; }

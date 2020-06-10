@@ -2,7 +2,7 @@
 
 namespace DAL.Entities
 {
-    public class Tournament
+    public class Tournament : IWithId<int>
     {
         [Key, Required]
         public int Id { get; set; }
