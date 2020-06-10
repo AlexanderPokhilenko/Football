@@ -124,6 +124,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IoC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -179,6 +180,24 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL.Abstract\BLL.Abstract.csproj">
+      <Project>{56BE56AF-E3F7-4A9F-AF5E-92CC086ECCAA}</Project>
+      <Name>BLL.Abstract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL.Implementation\BLL.Implementation.csproj">
+      <Project>{E0579AC8-C295-4A74-A54B-85A9DB5DDAD5}</Project>
+      <Name>BLL.Implementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL.Abstract\DAL.Abstract.csproj">
+      <Project>{42CBF84E-1E8D-4D81-A929-0EF81D8DB2F1}</Project>
+      <Name>DAL.Abstract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL.Implementation\DAL.Implementation.csproj">
+      <Project>{0974BFB3-489B-4EC8-9110-9B7145041EB0}</Project>
+      <Name>DAL.Implementation</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
